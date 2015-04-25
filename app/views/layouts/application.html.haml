@@ -1,0 +1,13 @@
+!!! 5
+
+%html.no-js{lang: 'en'}
+  %head
+    %meta{:charset => 'utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1'}
+    %title TechHire
+    = csrf_meta_tag
+    = stylesheet_link_tag :application, media: :all
+
+  %body
+
+    = yield
