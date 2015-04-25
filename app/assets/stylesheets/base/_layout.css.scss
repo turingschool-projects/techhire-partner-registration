@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.layout-wrap {
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 30px;
+}

@@ -12,14 +12,19 @@
   %body
 
     %header.mod-header
-      %h1= link_to 'TechHire', '/mockup/homepage'
+      .layout-wrap
+        %h1= link_to 'TechHire', '/mockup/homepage'
 
-      %nav
-        %ul
-          %li.active= link_to 'Home', '/mockup/homepage'
-          %li= link_to 'Learn More', '/mockup/learnmore'
-          %li= link_to 'TechHire Locations', '/mockup/locations'
-          %li= link_to 'Sign Up', '/mockup/signup'
-          %li= link_to 'Tools/Resources', '/mockup/tools'
+        %nav
+          %ul
+            %li.active= link_to 'Home', '/mockup/homepage'
+            %li= link_to 'Learn More', '/mockup/learnmore'
+            %li= link_to 'TechHire Locations', '/mockup/locations'
+            %li= link_to 'Sign Up', '/mockup/signup'
+            %li= link_to 'Tools/Resources', '/mockup/tools'
 
     = yield
+
+    %footer.mod-footer
+      .layout-wrap
+        [FOOTER]
