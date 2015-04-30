@@ -10,10 +10,10 @@
   }
 }
 
-@mixin hocus($outline: false, $additional-selectors: null) {
-  &:active,
-  &:hover,
-  &:focus,
+@mixin hocus($outline: false, $additional-selectors: null, $keyboard-only: false) {
+  $selectors: if($keyboard-only, '&:focus', '&:focus, &:hover, &:focus');
+
+  #{$selectors},
   #{$additional-selectors} {
     @content;
     outline: if($outline, null, none);
