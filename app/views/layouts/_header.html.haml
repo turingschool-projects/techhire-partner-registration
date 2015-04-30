@@ -1,0 +1,13 @@
+-# Replace the logic below with your own to set the `active` class name.
+
+%header.mod-header
+  .layout-wrap
+    %h1= link_to 'TechHire', '/mockup/homepage'
+
+    %nav
+      %ul
+        %li= link_to 'Home', '/mockup/homepage', class: (action_name == 'homepage' ? 'active' : nil)
+        %li= link_to 'Learn More', '/mockup/learnmore', class: (action_name == 'learnmore' ? 'active' : nil)
+        %li= link_to 'TechHire Locations', '/mockup/locations', class: (action_name == 'locations' ? 'active' : nil)
+        %li= link_to 'Sign Up', '/mockup/signup', class: (action_name == 'signup' ? 'active' : nil)
+        %li= link_to 'Tools/Resources', '/mockup/tools', class: (action_name == 'tools' ? 'active' : nil)

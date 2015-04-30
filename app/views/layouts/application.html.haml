@@ -7,24 +7,18 @@
     %title TechHire
     = csrf_meta_tag
     = stylesheet_link_tag :application, media: :all
+    -# Include Modernizr (used for browser feature detection):
     = javascript_include_tag :modernizr
 
   %body
 
-    %header.mod-header
-      .layout-wrap
-        %h1= link_to 'TechHire', '/mockup/homepage'
-
-        %nav
-          %ul
-            %li.active= link_to 'Home', '/mockup/homepage'
-            %li= link_to 'Learn More', '/mockup/learnmore'
-            %li= link_to 'TechHire Locations', '/mockup/locations'
-            %li= link_to 'Sign Up', '/mockup/signup'
-            %li= link_to 'Tools/Resources', '/mockup/tools'
+    -# Render the header (logo & main navigation) partial:
+    = render 'layouts/header'
 
     = yield
 
-    %footer.mod-footer
-      .layout-wrap
-        [FOOTER]
+    -# Render the footer partial:
+    = render 'layouts/footer'
+
+    -# Render the partial with analytics embed codes:
+    = render 'layouts/analytics'
