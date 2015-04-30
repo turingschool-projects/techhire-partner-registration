@@ -15,7 +15,8 @@
     -# Render the header (logo & main navigation) partial:
     = render 'layouts/header'
 
-    = yield
+    %main{role: 'main'}
+      = yield
 
     -# Render the footer partial:
     = render 'layouts/footer'
