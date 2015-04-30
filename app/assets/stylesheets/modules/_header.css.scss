@@ -38,7 +38,7 @@
     }
 
     a {
-      @include hocus($additional-selectors: '&.active') {
+      @include hocus($additional-selectors: '&.active', $keyboard-only: true) {
         &::after {
           content: "";
           width: 13px;
@@ -52,7 +52,7 @@
           background-size: 100%;
         }
       }
-      @include hocus {
+      @include hocus($keyboard-only: true) {
         color: rgba(#fff, .6);
 
         &::after {
