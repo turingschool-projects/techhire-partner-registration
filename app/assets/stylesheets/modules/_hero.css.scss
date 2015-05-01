@@ -4,9 +4,7 @@
   text-align: center;
   background: image-url("bg_hero.jpg") center center;
   background-size: cover;
-  mask: image-url("mask_section_bottom.svg") no-repeat;
-  mask-size: 100%;
-  mask-position: bottom center;
+  @extend %mask-section-bottom;
 
   h1 {
     position: relative;

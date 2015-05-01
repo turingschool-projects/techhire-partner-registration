@@ -11,3 +11,10 @@
     clear: both;
   }
 }
+
+%mask-section-bottom {
+  mask: inline("mask_section_bottom.svg") no-repeat;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: bottom center;
+}
