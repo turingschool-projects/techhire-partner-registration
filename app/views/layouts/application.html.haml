@@ -10,13 +10,14 @@
     -# Include Modernizr (used for browser feature detection):
     = javascript_include_tag :modernizr
 
-  %body
+  %body{class: content_for(:body_class)}
 
     -# Render the header (logo & main navigation) partial:
     = render 'layouts/header'
 
-    %main{role: 'main'}
-      = yield
+    .layout-main
+      %main{role: 'main'}
+        = yield
 
     -# Render the footer partial:
     = render 'layouts/footer'
