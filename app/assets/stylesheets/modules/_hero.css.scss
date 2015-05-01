@@ -1,7 +1,30 @@
 .mod-hero {
   position: relative;
-  padding: 225px 0 75px;
+  padding: 22.5% 12.5% 5.5%;
   text-align: center;
   background: image-url("bg_hero.jpg") center center;
   background-size: cover;
+
+  h1 {
+    position: relative;
+    margin-bottom: 22px;
+    padding: 11px;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #fff;
+    background: $blue;
+  }
+
+  .actions .button:first-child {
+      margin: 0 12px 20px 0;
+  }
+
+  @include min-width(1000px) {
+    padding-top: 225px;
+    padding-bottom: 55px;
+  }
+
+  @include max-width(500px) {
+    padding: 30px 30px 10px;
+  }
 }
