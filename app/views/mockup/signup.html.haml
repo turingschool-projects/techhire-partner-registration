@@ -1,2 +1,59 @@
 .mod-heading.check
   %h1 Sign Up
+
+.layout-wrap
+
+  %form{method: 'post', action: '#'}
+    %p.intro Whether you’re an employer, hiring manager, or community leader, all we need is an interest from you in learning more about TechHire, and a passion to find and hire talented employees in your community who are ready to work.
+
+    .row
+      %label{for: 'name'} Name (First and Last)
+      %input#name{type: 'text'}
+
+    .row
+      %label{for: 'organization'} Organization
+      %input#organization{type: 'text'}
+
+    .row
+      %label{for: 'title'} Title
+      %input#title{type: 'text'}
+
+    .row.cols-25-75
+      .col
+        %label{for: 'state'} State
+        .select
+          %select#state
+            %option{disabled: 'disabled', selected: 'selected'} Please select...
+            %option{value: 'AK'} AK
+            %option{value: 'AL'} AL
+            %option{value: 'AR'} AR
+            %option{value: 'AZ'} AZ
+            %option{value: 'CA'} CA
+
+      .col
+        %label{for: 'city'} City
+        .select
+          %select#city
+            %option{disabled: 'disabled', selected: 'selected'} Please select...
+            %option{value: 'Arkansas City'} Arkansas City
+            %option{value: 'Baltimore'} Baltimore
+            %option{value: 'Chicago'} Chicago
+            %option{value: 'Denver'} Denver
+            %option{value: 'New York'} New York
+            %option Washington, DC
+
+    .row
+      %label{for: 'email'} Email
+      %input#email{type: 'email'}
+
+    .row.commit
+      -# Custom checkbox; needs the empty <label>
+      %input#commit.custom-checkbox{type: 'checkbox'}
+      %label{for: 'commit'}
+
+      I am ready to commit to hiring
+      %input{type: 'text'}
+      people through TechHire.
+
+    .row.button-center
+      %button{type: 'submit', class: 'button'} Create TechHire account
