@@ -22,6 +22,8 @@ body {
 }
 
 .layout-main {
+  @extend %clearfix;
+
   .main-bg-yellow & {
     background: $yellow;
   }
