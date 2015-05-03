@@ -49,3 +49,24 @@ body {
     position: absolute;
   }
 }
+
+.layout-50-50 {
+  @extend %clearfix;
+  margin: 30px 0;
+
+  .col {
+    width: 48.935%;
+    float: left;
+
+    &:last-child {
+      float: right;
+      margin-bottom: 0;
+    }
+
+    @include max-width(700px) {
+      width: 100%;
+      float: none;
+      margin-bottom: 30px;
+    }
+  }
+}
