@@ -71,6 +71,10 @@
       width: 41px;
       height: 41px;
       display: block;
+
+      @include hocus {
+        opacity: .6;
+      }
     }
 
     @each $icon in facebook, twitter, linkedin {
