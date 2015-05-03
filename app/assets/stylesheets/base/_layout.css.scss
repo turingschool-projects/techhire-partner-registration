@@ -5,6 +5,7 @@ html {
 
 body {
   height: 100%;
+  background: $green;
 }
 
 *,
@@ -23,6 +24,7 @@ body {
 
 .layout-main {
   @extend %clearfix;
+  background: #fff;
 
   .main-bg-yellow & {
     background: $yellow;
