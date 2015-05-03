@@ -24,6 +24,7 @@ body {
 
 .layout-main {
   @extend %clearfix;
+  padding-bottom: 50px;
   background: #fff;
 
   .main-bg-yellow & {
