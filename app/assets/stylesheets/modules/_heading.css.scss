@@ -1,0 +1,20 @@
+.mod-heading {
+  padding: 115px 30px 45px;
+  text-align: center;
+  background: $yellow center 30px no-repeat;
+  @extend %mask-section-bottom;
+
+  @each $icon in check, learn, location, tools {
+    &.#{$icon} {
+      $filename: "h_#{$icon}.png";
+      background-image: image-url($filename);
+      background-size: (image-width($filename) / 2) auto;
+    }
+  }
+
+  h1 {
+    font-size: 36px;
+    text-transform: capitalize;
+    color: $blue;
+  }
+}
