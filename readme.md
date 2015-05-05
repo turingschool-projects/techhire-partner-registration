@@ -23,5 +23,5 @@ You can find links to all the mockups at [http://localhost:3000/mockups](http://
 ### Testing & bugs
 
 * ✅ Mobile/responsiveness
-* 🚧 Known Firefox bug
+* ✅ Known Firefox bug
 * 🚧 Internet Explorer
