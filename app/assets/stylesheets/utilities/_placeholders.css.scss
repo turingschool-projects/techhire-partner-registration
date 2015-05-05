@@ -1,13 +1,13 @@
 %clearfix {
   *display: inline-block;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: "";
     display: table;
   }
 
-  &:after {
+  &::after {
     clear: both;
   }
 }
