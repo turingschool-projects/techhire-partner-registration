@@ -1,2 +1,13 @@
 .mod-heading.location
   %h1 TechHire Locations
+
+.mod-map.layout-wrap
+
+  -# Add "{'data-debug': true}" to get an alert with x,y coordinates when clicking the map.
+  -# i.e. `.map{'data-debug': true}`
+  .map
+
+  .locations
+    %ul
+
+    %p= link_to 'Don\'t see your city?', '#', class: 'button small'
