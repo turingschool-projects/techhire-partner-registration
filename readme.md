@@ -18,7 +18,7 @@ You can find links to all the mockups at [http://localhost:3000/mockups](http://
 * ✅ Learn More
 * 🚧 TechHire Locations
 * ✅ Sign Up
-* 🚧 Tools/Resources
+* ✅ Tools/Resources
 
 ### Testing & bugs
 
